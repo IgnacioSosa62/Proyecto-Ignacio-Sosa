@@ -6,66 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/normalize.css">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../SASS/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Galeria</title>
 </head>
 
 <body class="fondo">
-    <header id="encabezado">
-        <section class="contactoHeader"> 
-            <div class="telefono">
-                <p>+54 15-5751-9509 Soyelhombredelabolsa@gmail.com</p>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../Img/SHB_logo-removebg-preview.png" alt="Logo" width="60"
+                        height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="./SobreNosotrosSeccion.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ProductosSeccion.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./GaleriaSeccion.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ContactoSeccion.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/hombre.de.la.bolsa" class="insLogo" target="_blank"><img
+                            src="../Img/instagram_logo.png" alt="InstLogo" width="40px"></a>
+                    <a href="https://walink.co/e184b3" target="_blank"><img src="../Img/whatsapp_logo.png" alt="WppLogo"
+                            width="40px"></a>
+                </div>
             </div>
-        
-            <div class="social">
-                <a href="https://www.instagram.com/hombre.de.la.bolsa/" class="insLogo"><img src="../Img/instagram_logo.png" alt="InstLogo"
-                        width="40px"></a>
-                <a href="https://walink.co/e184b3" target="_blank"><img src="../Img/whatsapp_logo.png" alt="WppLogo"
-                        width="40px"></a>
-            </div>
-        </section>
-            <div class="Logo">
-                <a href="./index.html"><img src="../Img/SHB_logo-removebg-preview.png" alt="logo" width="100px"></a>
-            </div>
-
-        <nav class="navegacion">
-            <ul>
-                <li><a class="iconShadow" href="../index.html">Inicio</a></li>
-                <li><a class="iconShadow" href="./SobreNosotrosSeccion.html">Sobre Nosotros</a></li>
-                <li><a class="iconShadow" href="./ProductosSeccion.html">Productos</a></li>
-                <li><a class="iconShadow" href="./GaleriaSeccion.html">Galeria</a></li>
-                <li><a class="iconShadow" href="./ContactoSeccion.html">Contacto</a></li>
-            </ul>
         </nav>
-
     </header>
 
-    <main class="Sobre">
-        <h2>Galeria</h2>
-        <div class="galeria">
-            <img src="../Img/Galeria/agrrro-organic-vArBGqX_EtY-unsplash.jpg" alt="organic" width="60%">
-            <img src="../Img/Galeria/pexels-shvets-production-7512941.jpg" alt="siadura" width="60%">
-            <img src="../Img/Galeria/priscilla-du-preez-L3lznpRPZbI-unsplash.jpg" alt="apples" width="60%">
-            <img src="../Img/Galeria/pexels-anna-shvets-3900506.jpg" alt="camiseta" width="60%">
-            <img src="../Img/Galeria/pexels-alexey-demidov-11458661.jpg" alt="camiseta" width="60%">
-            <img src="../Img/Galeria/pexels-karolina-grabowska-4033160.jpg" alt="camiseta" width="60%">
-        </div>
+    <main>
+
+        <div class="container gallery-container">
+
+            <h1>Chequeá nuestros productos!</h1>
+        
+            <p class="page-description text-center"></p>
+            
+            <div class="tz-gallery">
+        
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/CavaDelVino.jpeg" alt="CavaDelVino">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/Lazzul.jpeg" alt="Lazzul">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/MarieAntoinete.jpeg" alt="Marie">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/MarieAntoinetePlas.jpeg" alt="MariePlas">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/Monica.jpeg" alt="Monica">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/Scacchi.jpeg" alt="Scacchi">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/Tendencias.jpeg" alt="Tendencias">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/Variado.jpeg" alt="Variado">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="#">
+                            <img src="../Img/Galeria/WhiteAndBlack.jpeg" alt="W&B">
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        
+
+
     </main>
 
 
-    <footer class="contactoHeader" >
-        <div>
-            <p>Soy el hombre de la bolsa - Buenos Aires, Argentina</p>
-        </div>
-        <ul>
-            <li><a href="https://www.instagram.com/hombre.de.la.bolsa/">Instagram</li>
-            <li><a href="https://walink.co/e184b3" target="_blank">Whatsapp</a></li>
-        </ul>
+    <footer class="contactoHeader">
+        <p>Soy el hombre de la bolsa - Buenos Aires, Argentina</p>
     </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
