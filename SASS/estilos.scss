@@ -1,3 +1,6 @@
+
+$textoCentrado: center;
+
 //Fondo
 .fondo {
     background-image: url(../Img/purple-plastic-holographic-texture-wrinkled.jpg);
@@ -9,7 +12,7 @@
 
 //main
 .tituloPrincipal {
-    text-align: center;
+    text-align: $textoCentrado;
 }
 
 .animate__fadeIn {
@@ -34,7 +37,7 @@
 }
 
 section.tituloPrincipal {
-    text-align: center;
+    text-align: $textoCentrado;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
 }
@@ -75,7 +78,7 @@ footer {
 
 /* Seccion Contacto */
 .contactese {
-    text-align: center;
+    text-align: $textoCentrado;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -115,14 +118,14 @@ body {
 }
 
 .gallery-container h1 {
-    text-align: center;
+    text-align: $textoCentrado;
     margin-top: 70px;
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
 }
 
 .gallery-container p.page-description {
-    text-align: center;
+    text-align: $textoCentrado;
     max-width: 800px;
     margin: 25px auto;
     color: #888;
