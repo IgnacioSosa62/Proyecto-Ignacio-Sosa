@@ -159,12 +159,15 @@ body {
   background-color: transparent;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 0;
-  }
+.ProductoTexto {
+  text-align: center;
+  font-family: "Arvo", serif;
+}
 
-  .container.gallery-container {
-    border-radius: 0;
-  }
+.grid {
+  display: flex;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-content: space-around;
 }/*# sourceMappingURL=estilos.css.map */
