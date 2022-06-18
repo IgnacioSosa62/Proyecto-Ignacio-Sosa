@@ -3,12 +3,12 @@ $textoCentrado: center;
 
 $fuenteTexto:(
     Oswald: 'Oswald' sans-serif,
-    Roboto: 'Roboto Condensed' sans-serif,
+    Arvo: 'Arvo' serif,
     Droid: 'Droid Sans' sans-serif,
 );
 
 @mixin background {
-    background-image: url(../Img/purple-plastic-holographic-texture-wrinkled.jpg);
+    background-color: white;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -23,6 +23,7 @@ $fuenteTexto:(
 //main
 .tituloPrincipal {
     text-align: $textoCentrado;
+    font-family: 'Arvo', serif;;
 }
 
 .principal {
@@ -34,8 +35,12 @@ $fuenteTexto:(
     text-align: center;
 
         h2 {
-            font-family: map-get($fuenteTexto, Oswald);
+            font-family: 'Arvo', serif;
         }
+    
+    .texto {
+        font-family: 'Anek Latin', sans-serif;
+    }
 }
 
 .animate__fadeIn {
@@ -69,8 +74,19 @@ section.tituloPrincipal {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Arvo', serif;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .Title_text_center  {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 

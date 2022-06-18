@@ -1,5 +1,5 @@
 .fondo {
-  background-image: url(../Img/purple-plastic-holographic-texture-wrinkled.jpg);
+  background-color: white;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -7,28 +7,22 @@
 /* INDEX */
 .tituloPrincipal {
   text-align: center;
+  font-family: "Arvo", serif;
 }
 
 .principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: auto;
   text-align: center;
 }
-
 .principal h2 {
-  font-family: "Oswald" sans-serif;
+  font-family: "Arvo", serif;
+}
+.principal .texto {
+  font-family: "Anek Latin", sans-serif;
 }
 
 .animate__fadeIn {
@@ -38,9 +32,7 @@
 
 section.tituloPrincipal {
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: "Oswald" sans-serif;
 }
 
@@ -48,43 +40,38 @@ section.tituloPrincipal {
   background-color: white;
   border-radius: 10px;
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   margin: 10px;
   padding: 10px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: auto;
   text-align: center;
 }
 
+h2 {
+  font-family: "Arvo", serif;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .Title_text_center {
   padding-bottom: 20px;
+  text-align: center;
 }
 
 footer {
-  font-family: "Roboto Condensed" sans-serif;
   background-color: azure;
   padding: 20px;
   margin-top: 40px;
@@ -93,7 +80,6 @@ footer {
 /* Seccion Contacto */
 .contactese {
   text-align: center;
-  font-family: "Roboto Condensed" sans-serif;
 }
 
 .nombre {
@@ -120,7 +106,6 @@ textarea--radius {
 
 /* Seccion Galeria */
 body {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ecedee), color-stop(75%, #eceeef), to(#e7e8e9));
   background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
   min-height: 100vh;
   font: normal 16px sans-serif;
@@ -132,8 +117,7 @@ body {
   color: #35373a;
   min-height: 100vh;
   border-radius: 20px;
-  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
-          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
 }
 
 .gallery-container h1 {
@@ -158,17 +142,13 @@ body {
 .tz-gallery .lightbox img {
   width: 100%;
   margin-bottom: 30px;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .tz-gallery .lightbox img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .tz-gallery img {
@@ -183,8 +163,8 @@ body {
   body {
     padding: 0;
   }
+
   .container.gallery-container {
     border-radius: 0;
   }
-}
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
