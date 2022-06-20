@@ -80,6 +80,7 @@ footer {
 /* Seccion Contacto */
 .contactese {
   text-align: center;
+  font-family: "Arvo", serif;
 }
 
 .nombre {
@@ -170,4 +171,34 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   justify-content: space-around;
+}
+
+/* Sobre Nosotros */
+.Sobre {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.Sobre .centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Anek Latin", sans-serif;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.Meta h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+.Meta p {
+  text-align: center;
+}
+
+.nosotros h2 {
+  text-align: center;
+  padding-top: 20px;
 }/*# sourceMappingURL=estilos.css.map */
