@@ -26,6 +26,7 @@ $fuenteTexto:(
     font-family: 'Arvo', serif;;
 }
 
+
 .principal {
     display: flex;
     align-items: center;
@@ -40,6 +41,7 @@ $fuenteTexto:(
     
     .texto {
         font-family: 'Anek Latin', sans-serif;
+        font-size: 2rem;
     }
 }
 
@@ -78,17 +80,27 @@ h2 {
     font-family: 'Arvo', serif;
 }
 
-.productos {
+.flex-container{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-flow: row wrap;
+    .col {
+        display: flex;
+        justify-content: center;
+    }
 }
+
+
 
 .Title_text_center  {
     padding-bottom: 20px;
     text-align: center;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+	.principal {
+        display: none;
+    }
+}
 
 
 footer {
@@ -192,11 +204,18 @@ body {
 }
 
 .grid {
-    display: flex;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    justify-content: space-around;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;    
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 
 /* Sobre Nosotros */
@@ -234,4 +253,9 @@ body {
         text-align: center;
         padding-top: 20px;
     }
+    .texto {
+        text-align: center;
+    }
 }
+
+
