@@ -203,12 +203,11 @@ body {
     font-family: 'Arvo', serif;
 }
 
-.grid {
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;    
+.Card-Container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
